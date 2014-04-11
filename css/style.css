@@ -1,0 +1,53 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+#RouleteField{
+    background: url("../img/BG.png");
+    width: 960px;
+    height: 536px;
+    position: relative;
+}
+
+#RouleteField button{
+    position: absolute;
+    top: 219px;
+    left: 823px;
+    width: 98px;
+    height: 98px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    background:  url("../img/BTN_Spin.png");
+    -webkit-transform: scale(1,1);
+    -webkit-transition: 500ms;
+}
+
+#RouleteField button[disabled]{
+    background:  url("../img/BTN_Spin_d.png");
+}
+
+#RouleteField button:active{
+
+    -webkit-transform: scale(0.9,0.9);
+}
+
+#RouleteField canvas{
+    position: absolute;
+    left: 70px;
+    top: 37px;
+    width: 718px;
+    height: 465px;
+}
+
+#RouleteField h3{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 170px;
+    left: 800px;
+    font: 33px Helvetica;
+    letter-spacing: -2px;
+    color: orangered;
+}
